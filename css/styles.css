@@ -1,1 +1,33 @@
-/*# sourceMappingURL=styles.css.map */
+.cajita {
+  width: 100px;
+  height: 100px;
+}
+
+.cajitatwitter {
+  background-color: #48cbff;
+}
+
+.cajitafacebook {
+  background-color: #2b40ff;
+}
+
+.cajitainstagram {
+  background-color: #f048ff;
+}
+
+.cajitawp {
+  background-color: #48ff60;
+}
+
+.circulito1, .circulito2, .circulito3 {
+  border-radius: 50%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circulito1, .circulito2, .circulito3 {
+  height: 100px;
+  width: 200px;
+}/*# sourceMappingURL=styles.css.map */
