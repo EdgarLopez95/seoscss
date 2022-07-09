@@ -1,33 +1,143 @@
-.cajita {
-  width: 100px;
-  height: 100px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.cajitatwitter {
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.main .contenedor .galeria .card1,
+.main .contenedor .galeria .card2,
+.main .contenedor .galeria .card3,
+.main .contenedor .galeria .card4,
+.main .contenedor .galeria .card5,
+.main .contenedor .galeria .card6,
+.main .contenedor .galeria .card7,
+.main .contenedor .galeria .card8,
+.main .contenedor .galeria .card9 {
+  border-radius: 30px;
+  background-color: #ffd400;
+}
+
+.header {
+  width: 100%;
+  background-color: #02081e;
+}
+.header nav {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+.header nav p {
+  font-weight: bolder;
+}
+.header nav ul {
+  display: flex;
+}
+.header nav ul li {
+  margin: 0 10px;
+}
+
+.main {
+  background-color: #000a2f;
+  padding-bottom: 50px;
+}
+.main .contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.main .contenedor .sectionIndex-uno {
+  min-height: 400px;
+  width: 100%;
+}
+.main .contenedor .sectionIndex-uno div h1 {
+  color: white;
+  padding-top: 100px;
+  font-size: 60px;
+  text-align: center;
+  -webkit-animation-name: animacionTexto;
+          animation-name: animacionTexto;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  margin: 0 50px;
+}
+@-webkit-keyframes animacionTexto {
+  from {
+    opacity: 0;
+    font-size: 70px;
+  }
+  to {
+    opacity: 1;
+    font-size: 60px;
+  }
+}
+@keyframes animacionTexto {
+  from {
+    opacity: 0;
+    font-size: 70px;
+  }
+  to {
+    opacity: 1;
+    font-size: 60px;
+  }
+}
+.main .contenedor .galeria {
+  display: grid;
+  gap: 3rem;
+  grid-auto-rows: 22rem;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+}
+.main .contenedor .galeria .card1,
+.main .contenedor .galeria .card2,
+.main .contenedor .galeria .card3,
+.main .contenedor .galeria .card4,
+.main .contenedor .galeria .card5,
+.main .contenedor .galeria .card6,
+.main .contenedor .galeria .card7,
+.main .contenedor .galeria .card8,
+.main .contenedor .galeria .card9 {
+  height: 100%;
+  width: 100%;
+}
+
+.footer {
+  width: 100%;
+  background-color: #02081e;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 70px;
+}
+.footer section .nombre {
+  font-weight: bolder;
+}
+.footer section .contenedorCajitas {
+  margin-top: 10px;
+  display: flex;
+}
+.footer section .contenedorCajitas .cajita {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+.footer section .contenedorCajitas .cajitatwitter {
   background-color: #48cbff;
 }
-
-.cajitafacebook {
+.footer section .contenedorCajitas .cajitafacebook {
   background-color: #2b40ff;
 }
-
-.cajitainstagram {
+.footer section .contenedorCajitas .cajitainstagram {
   background-color: #f048ff;
 }
-
-.cajitawp {
+.footer section .contenedorCajitas .cajitawp {
   background-color: #48ff60;
-}
-
-.circulito1, .circulito2, .circulito3 {
-  border-radius: 50%;
-  background-color: red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.circulito1, .circulito2, .circulito3 {
-  height: 100px;
-  width: 200px;
 }/*# sourceMappingURL=styles.css.map */

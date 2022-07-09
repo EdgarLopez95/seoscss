@@ -1,0 +1,9 @@
+Empezando por 
+-el mapa, fue aplicado para hacer referencia a las redes sociales que se encuentran en la parte del footer
+-Mixin fue utilizado para definir el ancho de las card en la parte de galeria
+-El extend fue utilizado para definir valores dados para todas las card
+
+El seo
+- Añadí una descripción del sition con la etiqueta meta name description
+- Use palabras claves con la etiqueta meta keywords 
+- Mi nombre que es lo principal en mi portafolio es el unico h1 que se encuentra en el sitio 

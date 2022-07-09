@@ -1,0 +1,105 @@
+.header {
+  width: 100%;
+  background-color: $fondoOscuro;
+  nav {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    p {
+      font-weight: bolder;
+    }
+    ul {
+      display: flex;
+      li {
+        margin: 0 10px;
+      }
+    }
+  }
+}
+
+.main {
+  background-color: $azulOscuro;
+  padding-bottom: 50px;
+  .contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    .sectionIndex-uno {
+      min-height: 400px;
+      width: 100%;
+
+      div {
+        h1 {
+          color: white;
+          padding-top: 100px;
+          font-size: 60px;
+          text-align: center;
+          animation-name: animacionTexto;
+          animation-duration: 5s;
+          margin: 0 50px;
+        }
+
+        @keyframes animacionTexto {
+          from {
+            opacity: 0;
+            font-size: 70px;
+          }
+
+          to {
+            opacity: 1;
+            font-size: 60px;
+          }
+        }
+      }
+    }
+    .galeria {
+      display: grid;
+      gap: 3rem;
+      grid-auto-rows: 22rem;
+      grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+      .card1,
+      .card2,
+      .card3,
+      .card4,
+      .card5,
+      .card6,
+      .card7,
+      .card8,
+      .card9  {
+        @extend %card;
+        height: 100%;
+        @include anchos(100%);
+      }
+    }
+  }
+}
+
+.footer {
+  width: 100%;
+  background-color: $fondoOscuro;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 70px;
+  section {
+    .nombre {
+      font-weight: bolder;
+    }
+    .contenedorCajitas {
+      margin-top: 10px;
+      display: flex;
+      .cajita {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-left: 5px;
+      }
+      @each $redSocial, $color in $redes {
+        .cajita#{$redSocial} {
+          background-color: $color;
+        }
+      }
+    }
+  }
+}

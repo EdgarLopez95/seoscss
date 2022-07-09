@@ -13,3 +13,8 @@ $redes: (
 @mixin anchos($width) {
     width: $width;
 }
+
+%card{
+    border-radius: 30px;
+    background-color: $amarillo;
+  }
